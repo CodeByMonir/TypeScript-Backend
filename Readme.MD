@@ -2,9 +2,8 @@
 <h3 class="text-align: end;">-CodeByMonir</h3>
 
 step 1: Create a folder fot backend;
+
 step 2: npm init in empty folder
-
-
 
 step 3: npm install -D typescript
 
@@ -14,20 +13,15 @@ ste 4: tsc -init
 **Recommended Rules for TypeScript
 
 ```{
-  // Visit https://aka.ms/tsconfig to read more about this file
-  "compilerOptions": {
-    // File Layout
+    tsconfig.json =>
+{
     // "rootDir": "./src",    // uncomment this
     // "outDir": "./dist",    // uncomment this
 
-    // Environment Settings
-    // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
+
     "types": [],           // + "types": ["node"],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
+    
+
     // and npm install -D @types/node  // instal this package
 
     // Other Outputs
@@ -35,29 +29,15 @@ ste 4: tsc -init
     "declaration": true,     // set false
     "declarationMap": true,  // set false
 
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",       // remove this line
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-  }              // add     ,
-                            "include": ["src/**/*"],
-                            "exclude": ["node_modules"],
+    
+
+    }   // add here    ,
+                       "include": ["src/**/*"],
+                       "exclude": ["node_modules"],
 }
 
 ```
