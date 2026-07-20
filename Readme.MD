@@ -64,11 +64,9 @@ ste 4: tsc -init
 
 
 step 5: create src/server.ts file in root directory
+
+
 step 6: run tsc in terminal
-
-
-
-
 
 
 step 7: instal express "npm i express" & "npm i @types/express"
