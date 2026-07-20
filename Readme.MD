@@ -137,3 +137,57 @@ app.listen(config.port, () => {
 src/app.ts =>
 import config from "./config/index.js" or import "dotenv/config"
 ```
+
+
+step 12: instal mongoose "npm i mongoose"
+
+step 13: create src/config/db.ts
+
+```
+src/config/db.ts =>
+import mongoose from "mongoose"
+import config from "./index.js"
+
+export const connectDB = async () => {
+    try {
+        mongoose.connect(config.dataBase);
+        console.log("Connected MongoDB Successfully!");
+    } catch (error) {
+        console.log("Failed to Connect MongoDB!");
+    }
+}
+```
+```
+src/server.ts =>
+
+import { app } from "./app.js"
+import { connectDB } from "./config/db.js"
+import config from "./config/index.js"
+
+
+const main = () => {
+
+    connectDB()
+
+    app.listen(config.port, () => {
+        console.log(`Server is running on http://localhost:${config.port}`)
+    })
+}
+
+main()
+```
+
+
+
+```
+src/config/index.ts =>
+export default{
+    port: process.env.PORT,
+    dataBase: process.env.MONGODB_URL as string,
+}
+```
+
+```
+.env =>
+MONGODB_URL= Your Connection URL
+```

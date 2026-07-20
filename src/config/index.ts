@@ -7,4 +7,5 @@ dotenv.config({
 
 export default{
     port: process.env.PORT,
+    dataBase: process.env.MONGODB_URL!,
 }
