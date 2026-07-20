@@ -60,6 +60,8 @@ ste 4: tsc -init
                             "exclude": ["node_modules"],
 }
 
+```
+
 
 step 5: create src/server.ts file in root directory
 step 6: run tsc in terminal
@@ -79,7 +81,7 @@ now change this commonjs to module in package.json
 
 
 step 8: create src/app.ts
-
+```
 src/app.ts=>
 import express, { type Application, type Request, type Response } from 'express'
 
@@ -88,8 +90,8 @@ export const app:Application = express()
 app.get('/', (req:Request, res:Response) => {
   res.send('Hello World')
 })
-
-
+```
+```
 src/server.ts=>
 import { app } from "./app.js"
 
@@ -101,6 +103,7 @@ const main = () => {
 }
 
 main()
+```
 
 step 9: npm i dotenv
 
@@ -110,7 +113,7 @@ step 10: create .env in root
 PORT=3005
 
 step 11: create src/config/index.ts
-
+```
 src/config/index.ts =>
 import dotenv from "dotenv";
 import path from "node:path";
@@ -123,14 +126,16 @@ export default{
     port: process.env.PORT,
     // you can add add more here
 }
-
+```
+```
 src/server.ts =>
 import config from "./config/index.js"
 
 app.listen(config.port, () => {
         console.log(`Server is running on http://localhost:${config.port}`)
     })
-
-
+```
+```
 src/app.ts =>
 import config from "./config/index.js" or import "dotenv/config"
+```
