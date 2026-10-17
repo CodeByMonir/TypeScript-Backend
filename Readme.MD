@@ -51,7 +51,7 @@ step 6: create src/server.ts file in root directory
 step 7: run tsc in terminal
 
 
-step 8: instal express "npm i express" & "npm i @types/express"
+step 8: install express "npm i express" & "npm i @types/express"
 
 now change this commonjs to module in package.json
   "type": "commonjs",
