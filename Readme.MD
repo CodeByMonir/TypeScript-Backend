@@ -42,16 +42,16 @@ step 4: tsc --init
 
 ```
 
-to avoid error must install npm install -D @types/node for typescript node
+step 5: npm install -D @types/node for typescript node
 
 
-step 5: create src/server.ts file in root directory
+step 6: create src/server.ts file in root directory
 
 
-step 6: run tsc in terminal
+step 7: run tsc in terminal
 
 
-step 7: instal express "npm i express" & "npm i @types/express"
+step 8: instal express "npm i express" & "npm i @types/express"
 
 now change this commonjs to module in package.json
   "type": "commonjs",
@@ -60,7 +60,7 @@ now change this commonjs to module in package.json
 
 
 
-step 8: create src/app.ts
+step 9: create src/app.ts
 ```
 src/app.ts=>
 import express, { type Application, type Request, type Response } from 'express'
@@ -85,14 +85,14 @@ const main = () => {
 main()
 ```
 
-step 9: npm i dotenv
+step 10: npm i dotenv
 
-step 10: create .env in root
+step 11: create .env in root
 
 .env =>
 PORT=3005
 
-step 11: create src/config/index.ts
+step 12: create src/config/index.ts
 ```
 src/config/index.ts =>
 import dotenv from "dotenv";
@@ -121,9 +121,9 @@ import config from "./config/index.js" or import "dotenv/config"
 ```
 
 
-step 12: instal mongoose "npm i mongoose"
+step 13: instal mongoose "npm i mongoose"
 
-step 13: create src/config/db.ts
+step 14: create src/config/db.ts
 
 ```
 src/config/db.ts =>
