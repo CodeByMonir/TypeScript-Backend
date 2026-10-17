@@ -7,7 +7,7 @@ step 2: npm init -y in empty folder
 
 step 3: npm install -D typescript
 
-ste 4: tsc -init
+step 4: tsc --init
 
 
 **Recommended Rules for TypeScript
