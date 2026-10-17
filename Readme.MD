@@ -42,6 +42,8 @@ step 4: tsc --init
 
 ```
 
+to avoid error must install npm install -D @types/node for typescript node
+
 
 step 5: create src/server.ts file in root directory
 
