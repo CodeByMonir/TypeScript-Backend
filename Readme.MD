@@ -1,9 +1,9 @@
 <h1 class="text-align: center;">TypeScript Backend</h1>
 <h3 class="text-align: end;">-CodeByMonir</h3>
 
-step 1: Create a folder fot backend;
+step 1: Create a folder for backend;
 
-step 2: npm init in empty folder
+step 2: npm init -y in empty folder
 
 step 3: npm install -D typescript
 
