@@ -53,11 +53,25 @@ step 7: run tsc in terminal
 
 step 8: install express "npm i express", "npm i @types/express" & "npm install -D tsx"
 
+
+for run backend continuously change path name & add a script
+```
+ "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js", // change it index.js to server.js
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/server.ts"  // add this line
+  }
+```
+
 now change this commonjs to module in package.json
-  "type": "commonjs",
+```  
+"type": "commonjs",
          =>
   "type": "module",
-
+```
 
 
 step 9: create src/app.ts
