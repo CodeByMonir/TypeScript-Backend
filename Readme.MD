@@ -56,7 +56,7 @@ step 8: install express "npm i express", "npm i @types/express" & "npm install -
 
 for run backend continuously change path name & add a script
 ```
- "name": "backend",
+{ "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js", // change it index.js to server.js
