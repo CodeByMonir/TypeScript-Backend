@@ -22,7 +22,7 @@ step 4: tsc --init
     "types": [],           // + "types": ["node"],
     
 
-    // and npm install -D @types/node  // instal this package
+    // and npm install -D @types/node  // install this package
 
     // Other Outputs
     "sourceMap": true,
@@ -51,7 +51,7 @@ step 6: create src/server.ts file in root directory
 step 7: run tsc in terminal
 
 
-step 8: install express "npm i express" & "npm i @types/express"
+step 8: install express "npm i express", "npm i @types/express" & "npm install -D tsx"
 
 now change this commonjs to module in package.json
   "type": "commonjs",
