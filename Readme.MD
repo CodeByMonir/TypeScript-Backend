@@ -120,7 +120,9 @@ dotenv.config({
 
 export default{
     port: process.env.PORT,
-    // you can add add more here
+    // you can add add more here like
+    // databaseurl:process.env.URL,
+    // secret:process.env.SECRET,
 }
 ```
 ```
