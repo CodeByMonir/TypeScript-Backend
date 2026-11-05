@@ -73,6 +73,8 @@ now change this commonjs to module in package.json
   "type": "module",
 ```
 
+after changing run ```npm run dev```
+
 
 step 9: create src/app.ts
 ```
