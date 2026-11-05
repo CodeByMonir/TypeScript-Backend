@@ -3,11 +3,11 @@
 
 step 1: Create a folder for backend;
 
-step 2: npm init -y in empty folder
+step 2: ```npm init -y``` in empty folder
 
-step 3: npm install -D typescript
+step 3: ```npm install -D typescript```
 
-step 4: tsc --init
+step 4: ```tsc --init```
 
 
 **Recommended Rules for TypeScript
@@ -42,16 +42,16 @@ step 4: tsc --init
 
 ```
 
-step 5: npm install -D @types/node for typescript node
+step 5: ```npm install -D @types/node``` for typescript node
 
 
 step 6: create src/server.ts file in root directory
 
 
-step 7: run tsc in terminal
+step 7: run ```tsc``` in terminal
 
 
-step 8: install express "npm i express", "npm i @types/express" & "npm install -D tsx"
+step 8: install express ```npm i express```, ```npm i @types/express``` & ```npm install -D tsx```
 
 
 for run backend continuously change path name & add a script
@@ -99,7 +99,7 @@ const main = () => {
 main()
 ```
 
-step 10: npm i dotenv
+step 10: ```npm i dotenv```
 
 step 11: create .env in root
 
@@ -135,7 +135,7 @@ import config from "./config/index.js" or import "dotenv/config"
 ```
 
 
-step 13: instal mongoose "npm i mongoose"
+step 13: instal mongoose ```npm i mongoose```
 
 step 14: create src/config/db.ts
 
